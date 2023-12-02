@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+ 
+
+    @media(min-width : 576px){
+        .conteiner {
+        height: 1000px;
+        background-color: rgb(15, 186, 124);
+        display: grid;
+        row-gap: 10px;
+        column-gap: 10px;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 200px 150px 200px;        
+    }
+    .items-1{
+        background-image: url(./img/1.jpg);
+        background-size: cover;
+        grid-column-start: 1;
+        grid-column-end: 4;
+       
+    }
+    .items-2{
+        background-image: url(./img/2.jpg);
+        background-size: cover;
+        grid-column-start:1;
+        grid-column-end: 2;       
+    }
+    .items-3{
+        background-image: url(./img/3.jpg);
+        background-size: cover;
+        grid-row-start: 2;
+        grid-row-end : 3;
+        grid-column-start:1;
+        grid-column-end: 2;       
+    }
+    .items-4{
+        background-image: url(./img/4.jpg);
+        background-size: cover;
+        grid-row-start: 2;
+        grid-row-end : 3;
+        grid-column-start:2;
+        grid-column-end: 3;       
+    }
+    .items-5{
+        background-image: url(./img/5.jpg);
+        background-size: cover;
+        grid-row-start: 3;
+        grid-row-end : 4;
+        grid-column-start: 1;
+        grid-column-end: 2;       
+    }
+    .items-6{
+        background-image: url(./img/6.jpg);
+        background-size: cover;
+        grid-row-start: 3;
+        grid-row-end : 4;
+        grid-column-start:2;
+        grid-column-end: 3;       
+    }
+    .items-7{
+        background-image: url(./img/7.jpg);
+        background-size: cover;
+        grid-row-start: 4;
+        grid-row-end : 5;
+        grid-column-start:1;
+        grid-column-end: 3;       
+    }
+    .items-8{
+        background-image: url(./img/8.jpg);
+        background-size: cover;
+        grid-row-start: 5;
+        grid-row-end : 6;
+        grid-column-start:1;
+        grid-column-end: 2;       
+    }
+    .items-9{
+        background-image: url(./img/9.jpg);
+        background-size: cover;
+        grid-row-start: 5;
+        grid-row-end : 7;
+        grid-column-start:2;
+        grid-column-end: 3;       
+    }
+    }
+    @media(min-width : 992px){
+    .conteiner {
+        height: 1000px;
+        background-color: rgb(15, 186, 124);
+        display: grid;
+        row-gap: 10px;
+        column-gap: 10px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows:  1fr 100px 1fr 1fr 1fr 1fr   ;        
+    }
+    
+    .grid{
+        background-color: red;
+        font-size: 50px;
+    }
+    .items-1{
+        background-image: url(./img/1.jpg);
+        background-size: cover;
+        grid-column-start: 1;
+        grid-column-end: 3;
+       
+    }
+    .items-2{
+        background-image: url(./img/2.jpg);
+        background-size: cover;
+        grid-column-start: 3;
+        grid-column-end: 5;
+       
+    }
+    .items-5{
+        background-image: url(./img/5.jpg);
+        background-size: cover;
+        grid-row-start: 2;
+        grid-row-end : 4;
+        grid-column-start: 1;
+        grid-column-end: 2;       
+    }
+    .items-3{
+        background-image: url(./img/3.jpg);
+        background-size: cover;
+        grid-row-start: 2;
+        grid-row-end : 4;
+        grid-column-start:2;
+        grid-column-end: 3;       
+    }
+    .items-4{
+        background-image: url(./img/4.jpg);
+        background-size: cover;
+        grid-row-start: 2;
+        grid-row-end : 3;
+        grid-column-start:3;
+        grid-column-end: 5;       
+    }
+    .items-6{
+        background-image: url(./img/6.jpg);
+        background-size: cover;
+        grid-row-start: 4;
+        grid-row-end : 5;
+        grid-column-start:1;
+        grid-column-end: 3;       
+    }
+    .items-7{
+        background-image: url(./img/7.jpg);
+        background-size: cover;
+        grid-row-start: 5;
+        grid-row-end : 10;
+        grid-column-start:1;
+        grid-column-end: 3;       
+    }
+    .items-8{
+        background-image: url(./img/8.jpg);
+        background-size: cover;
+        grid-row-start: 3;
+        grid-row-end : 10;
+        grid-column-start:3;
+        grid-column-end: 5;       
+    }
+    .items-9{
+        background-image: url(./img/9.jpg);
+        background-size: cover;
+        grid-row-start: 10;
+        grid-row-end : 16;
+        grid-column-start:1;
+        grid-column-end: 5;       
+    }
+}
+    
+</style>
+
+<body>
+    
+    <section>
+        <div  class="conteiner">
+        <div class="grid items-1">1</div>
+        <div class="grid items-2">2</div>
+        <div class="grid items-3">3</div>
+        <div class="grid items-4">4</div>
+        <div class="grid items-5">5</div>
+        <div class="grid items-6">6</div>
+        <div class="grid items-7">7</div>
+        <div class="grid items-8">8</div>
+        <div class="grid items-9">9</div>
+    </div>  
+    </section>
+
+</body>
+
+</html>
